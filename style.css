@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f7f6;
+    color: #2d3748;
+    line-height: 1.7;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero {
+    background-color: #1f5a7a;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    color: #1f5a7a;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.about-text {
+    font-size: 1.05rem;
+    color: #4a5568;
+}
+
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.skills-list li {
+    background-color: #ebf4f8;
+    color: #1f5a7a;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    border-right: 4px solid #1f5a7a;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1f5a7a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #16425b;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #1f5a7a;
+    border: 2px solid #1f5a7a;
+}
+
+.btn-outline:hover {
+    background-color: #1f5a7a;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #718096;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .btn {
+        text-align: center;
+    }
+}
